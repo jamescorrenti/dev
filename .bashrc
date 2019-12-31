@@ -14,7 +14,7 @@ git_branch() {
 COLOR_RED="\033[38;5;9m"
 COLOR_YELLOW="\033[0;33m"
 COLOR_GREEN="\033[38;5;46m"
-COLOR_OCHRE="\033[38;5;95m"
+COLOR_PURPLE="\033[38;5;127m"
 COLOR_BLUE="\033[38;5;32m"
 COLOR_WHITE="\033[0;37m"
 COLOR_RESET="\033[0m"
@@ -26,10 +26,11 @@ function git_color {
         echo -e $COLOR_RED
     elif [[ $git_status =~ "Changes to be committed" ]]; then
         echo -e $COLOR_YELLOW
+    elif [[ $git_status =~ "branch is ahead" ]]; then
+        echo -e $COLOR_PURPLE
     elif [[ $git_status =~ "nothing to commit" ]]; then
         echo -e $COLOR_GREEN
     else    
-        echo -e $COLOR_OCHRE
+        echo -e $COLOR_WHITE
     fi
 }
-
