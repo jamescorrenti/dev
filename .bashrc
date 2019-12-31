@@ -37,3 +37,5 @@ function git_color {
         echo -e $COLOR_WHITE
     fi
 }
+# Needed to make GPG work properly
+export GPG_TTY=$(tty)
