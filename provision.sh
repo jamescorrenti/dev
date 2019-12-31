@@ -14,4 +14,4 @@ apt-get install -y \
 
 cp .vimrc ~/
 cp .git* ~/
-echo .bashrc >> ~/.bashrc
+cat .bashrc >> ~/.bashrc
