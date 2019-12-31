@@ -1,0 +1,11 @@
+[user]
+    name = "James Correnti"
+    email = <james@shift5.io>
+    signingkey = <> 
+[push]
+    default = simple
+[commit]
+    template = ~/.git_commit_msg.txt
+    gpgsign = true
+[core]
+    editor = vim
