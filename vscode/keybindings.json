@@ -1,0 +1,234 @@
+// Place your key bindings in this file to override the defaults
+[
+        {
+                "key": "right",
+                "command": "editor.action.inlineSuggest.showNext",
+                "when": "inlineSuggestionVisible && !editorReadonly"
+        },
+        {
+                "key": "alt+]",
+                "command": "-editor.action.inlineSuggest.showNext",
+                "when": "inlineSuggestionVisible && !editorReadonly"
+        },
+        {
+                "key": "left",
+                "command": "editor.action.inlineSuggest.showPrevious",
+                "when": "inlineSuggestionVisible && !editorReadonly"
+        },
+        {
+                "key": "alt+[",
+                "command": "-editor.action.inlineSuggest.showPrevious",
+                "when": "inlineSuggestionVisible && !editorReadonly"
+        },
+
+    /**
+    * Panels
+    **/
+    {
+        "key": "cmd+k cmd+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "cmd+k cmd+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "cmd+k cmd+p",
+        "command": "workbench.view.extension.test"
+    },
+    {
+        "key": "cmd+k cmd+c",
+        "command": "workbench.view.extension.dockerView"
+    },
+    {
+        "key": "cmd+k cmd+a",
+        "command": "workbench.view.extension.aws-explorer"
+    },
+    {
+        "key": "cmd+k cmd+x",
+        "command": "workbench.extensions.action.showInstalledExtensions"
+    },
+    {
+        "key": "cmd+k cmd+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+
+    /**
+    * Project Switching
+    **/
+    {
+        "key": "cmd+;",
+        "command": "workbench.action.switchWindow"
+    },
+
+    /**
+    * File Explorer
+    **/
+    {
+        "key": "cmd+d",
+        "command": "duplicate.execute",
+        "when": "explorerViewletVisible && fileExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+
+    /**
+    * Terminal Split Panel
+    **/
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+
+    /**
+    * Split Panel
+    **/
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.splitEditor",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.increaseViewSize",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.joinAllGroups",
+        "when": "editorFocus"
+    },
+
+
+    /**
+    * Line Manipulation
+    **/
+    {
+        "key": "cmd+l",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+j",
+        "command": "editor.action.joinLines",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "editor.unfold",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "editor.fold",
+        "when": "editorFocus"
+    },
+
+    /**
+    * Multi-Cursor
+    **/
+    {
+        "key": "cmd+backspace",
+        "command": "editor.action.moveSelectionToPreviousFindMatch",
+        "when": "editorFocus && editorHasMultipleSelections"
+    },
+    {
+        "key": "cmd+right",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorFocus && editorHasSelection"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus && editorHasMultipleSelections"
+    },
+
+    /**
+    * Toggle Big/Small Font Size
+    **/
+    {
+        "key": "cmd+k cmd+k",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args": {
+            "id": "fontSize",
+            "value": [
+                {
+                    "editor.fontSize": 16,
+                    "editor.lineHeight": 45,
+                },
+                {
+                    "editor.fontSize": 14,
+                    "editor.lineHeight": 0,
+                }
+            ]
+        }
+    },
+    /**
+    * IntelliSense
+    */
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+k cmd+enter",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
+    },
+]

@@ -1,0 +1,198 @@
+{
+    /**
+    * Better Defaults
+    **/
+    "editor.copyWithSyntaxHighlighting": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.emptySelectionClipboard": false,
+    "workbench.editor.enablePreview": false,
+    "window.newWindowDimensions": "inherit",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.renderSideBySide": false,
+    "editor.snippetSuggestions": "top",
+    "editor.detectIndentation": false,
+    "window.nativeFullScreen": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "workbench.colorTheme": "Palenight Theme",
+    "workbench.sideBar.location": "right",
+    "workbench.editor.showTabs": false,
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
+    /**
+
+    * Silence the Noise
+    **/
+    "breadcrumbs.enabled": false,
+    "scm.diffDecorations": "none",
+    "workbench.tips.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.lightbulb.enabled": false,
+    /**
+    * Find
+    */
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        // Hide everything in /vendor, except the "laravel" and "livewire" folder.
+        "**/vendor/{[^l],?[^ai]}*": true,
+        // Hide everything in /public, except "index.php"
+        "**/public/{[^i],?[^n]}*": true,
+        "**/node_modules": true,
+        "**/__pycache__": true,
+        "**/*venv": true,
+        "**/bower_components": true,
+        "**/dist": true,
+        "**/_ide_helper.php": true,
+        "**/composer.lock": true,
+        "**/package-lock.json": true,
+        "storage": true,
+        "**/*.code-search": true
+    },
+
+    /**
+    * Project Switcher
+    */
+    "simple-project-switcher.directory": "/Users/jecorren/Desktop/src",
+
+    /**
+    * Typography
+    */
+    "editor.fontSize": 16,
+    "editor.lineHeight": 45,
+    "editor.suggestFontSize": 16,
+    "editor.suggestLineHeight": 28,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.lineHeight": 1.5,
+
+    /**
+    * Disable standard Pytest
+    */
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": false,
+    "pythonTestExplorer.testFramework": "pytest", // (or unittest)
+
+    /**
+    * Spellings
+    */
+
+    "cSpell.userWords": [
+        "apigw",
+        "applicationautoscaling",
+        "autouse",
+        "awslogs",
+        "AWSV",
+        "batchcreation",
+        "blocklist",
+        "boto",
+        "botocore",
+        "caplog",
+        "capsys",
+        "controltower",
+        "Correnti",
+        "creds",
+        "deploymentconfig",
+        "deploymentgroup",
+        "DGRAM",
+        "dockerized",
+        "elasticloadbalancingv",
+        "elasticmock",
+        "elbv",
+        "errorfactory",
+        "eventbridge",
+        "Exfil",
+        "Fargate",
+        "fickling",
+        "gatedgarden",
+        "gztar",
+        "huggingface",
+        "imagedefinitions",
+        "INETSIM",
+        "Isengard",
+        "jsii",
+        "Kaniko",
+        "kinesisfirehose",
+        "kwargs",
+        "loguru",
+        "matplotlib",
+        "mern",
+        "Moneyball",
+        "moto",
+        "mxnet",
+        "NACL",
+        "Natsec",
+        "networkfirewall",
+        "omegaconf",
+        "openmock",
+        "opensearch",
+        "opensearchdomain",
+        "opensearchpy",
+        "opensearchservice",
+        "Palenight",
+        "PCAP",
+        "powertools",
+        "pretrained",
+        "proxyed",
+        "pycache",
+        "pydantic",
+        "pyplot",
+        "pytest",
+        "relu",
+        "routable",
+        "runas",
+        "sklearn",
+        "stepfunctions",
+        "taskdef",
+        "usefixtures",
+        "venv",
+        "Virt",
+        "virtualenv",
+        "xlarge",
+    ],
+    "markdown.extension.toc.slugifyMode": "gitlab",
+    "aws.profile": "profile:detc",
+    "workbench.activityBar.visible": false,
+    "pythonTestExplorer.testFramework": "pytest",
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.validate": false,
+    "redhat.telemetry.enabled": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "notebook.editorOptionsCustomizations": {
+
+    },
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "window.zoomLevel": 1,
+    "editor.hover.enabled": true,
+
+}
